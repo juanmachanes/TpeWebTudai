@@ -1,0 +1,263 @@
+@keyframes animacionAgrandar{
+    0%{
+        width: 150%;
+    }
+    100%{
+        width: 100%;
+
+    }
+}
+body{
+    margin-top: 0%;
+    margin-left: 0px;
+    animation-name:animacionAgrandar;
+    animation-duration: 1s;
+    background-color: blanchedalmond;
+    font-family: 'Amatic SC', cursive;
+    font-size: x-large;
+}
+
+p{
+    text-indent: 15px;
+    text-align: justify;
+    color: black;
+}
+h2{
+    color:black;
+    text-align: center;
+    border: 2px solid blueviolet;
+    padding: 5px;
+}
+h3{
+    color:white;
+    margin: 1%;
+}
+
+
+.nav{
+    background-color: blueviolet;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.nav__ul{
+    justify-content: center;
+    display: flex;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    
+}
+.nav__li{
+    list-style: none;
+    margin: 1px 0%;
+    padding: 12px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.nav__li a{
+    
+    color: white;
+    text-decoration: none;
+}
+
+
+.nav__li:hover{
+    padding: 10px;
+    border: 2px solid white ;
+}
+
+
+.contenido{
+    display: flex;
+    padding-top: 5%;
+    
+}
+
+.ContenidoDerecho{
+    padding: 1%;
+    width: 20%;
+    background-color: darkseagreen;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 2%;
+}
+.ContenidoIzquierdo{
+    padding: 1%;
+    width: 80%;
+    background-color: indianred;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 2%;
+
+}
+.head{
+    padding-top: 5%;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.titulo{
+    border: 5px dotted blueviolet;
+    border-radius: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float: left;
+    width: 300px;
+    height: 211px;
+}
+
+
+.divTiempo__li{
+    display: inline-block;
+    text-align: center;
+}
+.grupoTrabajo{
+    text-align: center;
+}
+.grupoTrabajo__div{
+    width: 25%;
+    height: 300px;
+    margin: 1%;
+    padding: 8px;
+    border: 2px solid slateblue;
+    background-color: darkseagreen;
+    border-radius: 10%;
+    display: inline-block;
+    transition: transform 1s;
+}
+.grupoTrabajo__div:hover{
+    transform: scale(1.1);
+}
+
+.grupoTrabajo__div img{
+    width: 100%;
+    height: 220px;
+    border-radius: 10%;
+}
+.grupoTrabajo__div p{
+    text-align: center;
+}
+
+
+
+.publicidad{
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 15%;
+    
+}
+
+.publicidad__img{
+    text-align: center;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.Indice p {
+    text-align: center;
+    display: block;
+}
+.Indice h3{
+    text-align: center;
+}
+.Indice li{
+    margin: 10%;
+    text-align: center;
+    
+    border: 1px solid black;
+}
+.Indice li:hover{
+    border: 1px solid slateblue;
+    color: slateblue;
+}
+footer{
+    padding-top: 25px;
+    text-align: center;
+    background-color: slateblue;
+    padding: 5px;
+}
+footer ul{
+    text-align: center;
+}
+footer li{
+    display: inline-block;
+    text-align: center;    
+}
+.Radio{
+    text-align: center;
+}
+
+
+#Noticia1{
+    background-image: url(https://www.contrareplica.mx/uploads/galerias/normal/d51adde6198cd2e5a32ddda82d2ee9b6.jpg);
+    background-position: center;
+}
+#Noticia2{
+    background-image: url(https://www.contrareplica.mx/uploads/galerias/normal/d51adde6198cd2e5a32ddda82d2ee9b6.jpg);
+    background-position: center;
+}
+#Noticia3{
+    background-image: url(https://www.contrareplica.mx/uploads/galerias/normal/d51adde6198cd2e5a32ddda82d2ee9b6.jpg);
+    background-position: center;
+}
+
+.Noticias{
+    text-align: center;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.Noticias a {
+    width: 33%;
+    height: 400px;
+    margin: 1%;
+    border: 2px solid slateblue;
+    border-radius: 5%;
+    display: inline-block;
+    transition: transform 1s;
+}
+.Noticias a:hover{
+    transform: scale(1.05);
+    border: 2px solid slategray
+}
+.Resumen{
+    border-radius: 5%;
+    background-color: rgba(216, 210, 198, 0.73);
+}
+.Resumen h3{
+    margin: 0px;
+}
+.Noticias p {
+    height: 30%;
+    
+    text-align: justify;
+    color: black;
+}
+.Noticias__img{
+    width: 70%;
+    text-align: center center;
+
+    
+}
+.CovidEstadistica{
+    margin: 35px;
+    padding: 5px;
+    border: 2px solid red;
+    display: inline-block;
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+.NoticiaNuevaPag{
+    column-count: 3;
+}
+.NoticiaNuevaPag img{
+    width: 430px;
+}
+.NoticiaNuevaPag p{
+    text-indent: 15px;
+    text-align: justify;
+}
