@@ -7,6 +7,9 @@
 
     }
 }
+a{
+    text-decoration: none;
+}
 body{
     margin-top: 0%;
     margin-left: 0px;
@@ -29,7 +32,7 @@ h2{
     padding: 5px;
 }
 h3{
-    color:white;
+    color:black;
     margin: 1%;
 }
 
@@ -70,8 +73,11 @@ h3{
 
 .contenido{
     display: flex;
-    padding-top: 5%;
+
     
+}
+.contenidoContactanos{
+    padding-top: 2%;
 }
 
 .ContenidoDerecho{
@@ -264,4 +270,35 @@ footer li{
 .Tabla{
     width: 100%;
     text-align: center;
+}
+.preview{
+    display: block;
+    margin: 2%;
+    height: 300px;
+    width: 96%;
+    word-wrap: break-word;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.Envios p{
+    text-align: center;
+}
+.textoPreview{
+    display: block;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.textoEstadoPreview{
+    
+    text-align: center;
+    font-weight:bold;
+    
+}
+.firmaPreview{
+    font-style: italic;
+    text-align: right;
+    padding-right: 10%;
 }
