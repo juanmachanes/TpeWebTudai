@@ -198,16 +198,22 @@ footer li{
 
 
 #Noticia1{
-    background-image: url(https://www.contrareplica.mx/uploads/galerias/normal/d51adde6198cd2e5a32ddda82d2ee9b6.jpg);
-    background-position: center;
+    background-image: url(https://cdn.eleco.com.ar/media/2021/04/e983f63e-fiesta-clandestina-am%C3%A9rcio-reynoso.jpg);
+    background-size: cover;
+    
 }
 #Noticia2{
-    background-image: url(https://www.contrareplica.mx/uploads/galerias/normal/d51adde6198cd2e5a32ddda82d2ee9b6.jpg);
-    background-position: center;
+    background-image: url(https://cdn.eleco.com.ar/media/2021/04/0435de14-muerto.jpg);
+    background-size: cover;
 }
 #Noticia3{
-    background-image: url(https://www.contrareplica.mx/uploads/galerias/normal/d51adde6198cd2e5a32ddda82d2ee9b6.jpg);
-    background-position: center;
+    background-image: url(https://cdn.eleco.com.ar/media/2021/04/37650059-drogas-1.jpeg);
+    background-size: cover;
+}
+#Noticia4{
+    background-image: url(https://cdn.eleco.com.ar/media/2021/04/7936df13-patagonia.jpg);
+    background-size: cover;
+    
 }
 
 .Noticias{
