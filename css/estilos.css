@@ -304,6 +304,7 @@ footer li{
     width: 100%;
     text-align: center;
 }
+
 .preview{
     display: block;
     margin: 2%;
@@ -317,10 +318,13 @@ footer li{
 
 
 .Envios{
-
+    min-height: 200px;
+    background-color: indianred;
+    border: 2px solid black;
+    border-radius: 50px;
     text-align: center;
-    width: 50%;
-    margin: 0px 25%;
+    width: 96%;
+    margin: 2%;
     
 }
 .Mensajes{

@@ -1,4 +1,7 @@
 "use strict";
+let num1 = Math.floor((Math.random()*10) + 1);
+let num1 = Math.floor((Math.random()*10) + 1);
+
 let inputTexto= document.getElementById("inputText");
 let inputEstado = document.getElementById("inputAsunto");
 let inputNombre = document.getElementById("inputNombre");
@@ -14,6 +17,8 @@ inputEstado.addEventListener("keyup",preview);
 inputNombre.addEventListener("keyup", preview);
 inputApellido.addEventListener("keyup",preview);
 inputEnviar.addEventListener("click",send);
+
+
 
 function send(){
     let post = document.createElement("div");
