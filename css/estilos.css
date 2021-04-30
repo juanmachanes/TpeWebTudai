@@ -317,13 +317,16 @@ footer li{
 
 
 .Envios{
+
     text-align: center;
     width: 50%;
     margin: 0px 25%;
     
 }
 .Mensajes{
+    background-color: darkseagreen;
     border: 2px solid black;
+    border-radius: 50px;
     word-wrap: break-word;
     margin: 1%;
 
@@ -332,7 +335,7 @@ footer li{
 .textoPreview{
     
     width: 100%;
-    text-align: justify;
+    text-align: center;
 }
 
 .textoEstadoPreview{
