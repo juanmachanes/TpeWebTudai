@@ -307,7 +307,7 @@ footer li{
 .preview{
     display: block;
     margin: 2%;
-    min-height: 100px;
+    min-height: 300px;
     width: 96%;
     word-wrap: break-word;
     background-color: whitesmoke;
