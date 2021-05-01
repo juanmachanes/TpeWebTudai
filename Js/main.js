@@ -1,7 +1,10 @@
 "use strict";
-let num1 = Math.floor((Math.random()*10) + 1);
-let num1 = Math.floor((Math.random()*10) + 1);
+let numRandom1 = Math.floor((Math.random()*10) + 1);
+let numRandom2 = Math.floor((Math.random()*10) + 1);
 
+let num1= document.getElementById("num1");
+let num2= document.getElementById("num2");
+let inputResultadoCapcha= document.getElementById("resultado");
 let inputTexto= document.getElementById("inputText");
 let inputEstado = document.getElementById("inputAsunto");
 let inputNombre = document.getElementById("inputNombre");
@@ -16,9 +19,15 @@ inputTexto.addEventListener("keyup",preview);
 inputEstado.addEventListener("keyup",preview);
 inputNombre.addEventListener("keyup", preview);
 inputApellido.addEventListener("keyup",preview);
-inputEnviar.addEventListener("click",send);
+inputEnviar.addEventListener("click",validarCapcha);
+
+cambiarNumeros();
 
 
+function cambiarNumeros(){
+    num1.innerHTML=numRandom1;
+    num2.innerHTML=numRandom2;
+}
 
 function send(){
     let post = document.createElement("div");
@@ -31,10 +40,20 @@ function send(){
     asunto.className="textoEstadoPreview";
     texto.className="textoPreview";
     nombre.className="firmaPreview";
-    post.className="Mensajes";
+    post.className="MensajeEnviado";
     post.appendChild(asunto);
     post.appendChild(texto);
     post.appendChild(nombre);
+    envios.appendChild(post);
+}
+
+function sendError(){
+    let post = document.createElement("div");
+    let texto = document.createElement("p");
+    texto.innerHTML= "No se pudo mandar el mensaje,error en la resolucion del capcha";
+    texto.className="textoPreview";
+    post.className="MensajeNoEnviado";
+    post.appendChild(texto);
     envios.appendChild(post);
 }
 
@@ -43,4 +62,17 @@ function preview(){
     estadoPreview.innerHTML = inputEstado.value;
     Firma.innerHTML = "Atte: "+inputApellido.value+" "+inputNombre.value;
 
+}
+
+function validarCapcha(){
+    if (inputResultadoCapcha.value==(numRandom1+numRandom2)){
+        send();
+        
+    }else{
+        sendError();
+
+    }
+    numRandom1 = Math.floor((Math.random()*10) + 1);
+    numRandom2 = Math.floor((Math.random()*10) + 1);
+    cambiarNumeros();
 }

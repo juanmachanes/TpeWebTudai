@@ -318,17 +318,28 @@ footer li{
 
 
 .Envios{
+    width: 96%;
     min-height: 200px;
-    background-color: indianred;
+    background-color: royalblue;
     border: 2px solid black;
     border-radius: 50px;
-    text-align: center;
-    width: 96%;
     margin: 2%;
+    text-align: center;
+    
+    
     
 }
-.Mensajes{
+.MensajeEnviado{
     background-color: darkseagreen;
+    border: 2px solid black;
+    border-radius: 50px;
+    word-wrap: break-word;
+    margin: 1%;
+
+
+}
+.MensajeNoEnviado{
+    background-color: indianred;
     border: 2px solid black;
     border-radius: 50px;
     word-wrap: break-word;
@@ -352,4 +363,20 @@ footer li{
     font-style: italic;
     text-align: right;
     padding-right: 10%;
+}
+
+.capcha{
+    text-align: center;
+    margin-bottom: 2%;
+    
+}
+.formulario{
+    text-align: center;
+}
+.formulario input{
+    margin-right: 5%;
+}
+.envioMensaje{
+    margin-top: 2%;
+    
 }
