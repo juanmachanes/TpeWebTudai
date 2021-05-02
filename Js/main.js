@@ -4,12 +4,14 @@ let numRandom2 = Math.floor((Math.random()*10) + 1);
 
 let num1= document.getElementById("num1");
 let num2= document.getElementById("num2");
+
 let inputResultadoCapcha= document.getElementById("resultado");
 let inputTexto= document.getElementById("inputText");
 let inputEstado = document.getElementById("inputAsunto");
 let inputNombre = document.getElementById("inputNombre");
 let inputApellido = document.getElementById("inputApellido");
 let inputEnviar = document.getElementById("enviar");
+
 let envios = document.querySelector(".Envios");
 let Preview = document.querySelector(".textoPreview");
 let estadoPreview = document.querySelector(".textoEstadoPreview");
