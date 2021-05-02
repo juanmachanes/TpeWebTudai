@@ -7,6 +7,7 @@
 
     }
 }
+/* ELEMENTOS GENERALES*/
 a{
     text-decoration: none;
 }
@@ -36,7 +37,7 @@ h3{
     margin: 1%;
 }
 
-
+/* BARRA DE NAVEGACION*/
 .nav{
     background-color: blueviolet;
     width: 100%;
@@ -70,16 +71,11 @@ h3{
     border: 2px solid white ;
 }
 
-
+/* CUERPO HOME*/
 .contenido{
     display: flex;
+}
 
-    
-}
-.contenidoContactanos{
-    
-    padding-top: 2%;
-}
 
 .ContenidoDerecho{
     padding: 1%;
@@ -98,8 +94,8 @@ h3{
     margin: 2%;
 
 }
+/* HEAD*/
 .head{
-    align-items: center;
     display: flex;
     padding-top: 5%;
     width: 50%;
@@ -121,6 +117,10 @@ h3{
     width: 75%;
     display: flex;
 }
+.divTiempo__li{
+    list-style: none;
+    
+}
 .CovidEstadistica{
     text-align: center;
     width: 75%;
@@ -129,12 +129,10 @@ h3{
     display: inline-block;
 }
 
-.divTiempo__li{
-    list-style: none;
-    
-}
+/* GRUPO DE TRABAJO*/
 .grupoTrabajo{
-    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 .grupoTrabajo__div{
     width: 25%;
@@ -144,11 +142,11 @@ h3{
     border: 2px solid slateblue;
     background-color: darkseagreen;
     border-radius: 10%;
-    display: inline-block;
-    transition: transform 1s;
+    
 }
 .grupoTrabajo__div:hover{
     transform: scale(1.1);
+    transition: transform 1s;
 }
 
 .grupoTrabajo__div img{
@@ -161,23 +159,21 @@ h3{
 }
 
 
-
+/* PUBLICIDAD HOME*/
 .publicidad{
-    text-align: center;
     width: 100%; 
-    margin-bottom: 15%;
-    
+    margin-bottom: 15%;  
 }
 
 .publicidad__img{
-    text-align: center;
     width: 100%;
     border: 2px solid black;
 }
 
+/* INDICE HOME*/
 .Indice p {
     text-align: center;
-    display: block;
+    
 }
 .Indice h3{
     text-align: center;
@@ -185,17 +181,17 @@ h3{
 .Indice li{
     margin: 10%;
     text-align: center;
-    
     border: 1px solid black;
 }
 .Indice li:hover{
     border: 1px solid slateblue;
     color: slateblue;
 }
+
+/* FOOTER*/
 footer{
     width: 100%;
     padding-top: 25px;
-    text-align: center;
     background-color: slateblue;
     padding: 5px;
 }
@@ -210,7 +206,7 @@ footer li{
     text-align: center;
 }
 
-
+/* NOTICIAS*/
 #Noticia1{
     background-image: url(https://cdn.eleco.com.ar/media/2021/04/e983f63e-fiesta-clandestina-am%C3%A9rcio-reynoso.jpg);
     background-size: cover;
@@ -256,10 +252,10 @@ footer li{
 }
 
 .Noticias{
-    text-align: center;
-    color: white;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    color: white;
+    
 }
 
 .Noticias a {
@@ -268,13 +264,14 @@ footer li{
     margin: 1%;
     border: 2px solid slateblue;
     border-radius: 5%;
-    display: inline-block;
     transition: transform 1s;
 }
 .Noticias a:hover{
     transform: scale(1.05);
     border: 2px solid slategray
 }
+
+
 .Resumen{
     border-radius: 5%;
     background-color: rgba(216, 210, 198, 0.73);
@@ -282,34 +279,19 @@ footer li{
 .Resumen h3{
     margin: 0px;
 }
-.Noticias p {
-    height: 30%;
-    
-    text-align: justify;
-    color: black;
-}
-.Noticias__img{
-    width: 70%;
-    text-align: center center;
 
-    
-}
 
-.NoticiaNuevaPag{
-    column-count: 3;
-}
-.NoticiaNuevaPag img{
-    width: 430px;
-}
-.NoticiaNuevaPag p{
-    text-indent: 15px;
-    text-align: justify;
-}
+
 .Tabla{
     width: 100%;
     text-align: center;
 }
+/* CONTACTANOS ENVIO*/
 
+.contenidoContactanos{
+    
+    padding-top: 2%;
+}
 .preview{
     display: block;
     margin: 2%;
@@ -324,15 +306,12 @@ footer li{
 
 .Envios{
     width: 96%;
+    margin: 2%;
     min-height: 200px;
     background-color: royalblue;
     border: 2px solid black;
     border-radius: 50px;
-    margin: 2%;
     text-align: center;
-    
-    
-    
 }
 .MensajeEnviado{
     background-color: darkseagreen;
