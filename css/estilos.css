@@ -99,27 +99,39 @@ h3{
 
 }
 .head{
+    align-items: center;
+    display: flex;
     padding-top: 5%;
-    text-align: center;
     width: 50%;
     margin: 0 auto;
 
 }
 .titulo{
+    text-align: center;
     border: 5px dotted blueviolet;
     border-radius: 250px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    float: left;
-    width: 300px;
-    height: 211px;
+    width: 25%;
+    padding: 2%;
 }
 
+.divTiempo{
+    width: 75%;
+    display: flex;
+}
+.CovidEstadistica{
+    text-align: center;
+    width: 75%;
+    margin: 35px;
+    border: 2px solid red;
+    display: inline-block;
+}
 
 .divTiempo__li{
-    display: inline-block;
-    text-align: center;
+    list-style: none;
+    
 }
 .grupoTrabajo{
     text-align: center;
@@ -282,14 +294,7 @@ footer li{
 
     
 }
-.CovidEstadistica{
-    margin: 35px;
-    padding: 5px;
-    border: 2px solid red;
-    display: inline-block;
-    transform: scale(1.1);
-    transition: transform 1s;
-}
+
 .NoticiaNuevaPag{
     column-count: 3;
 }
