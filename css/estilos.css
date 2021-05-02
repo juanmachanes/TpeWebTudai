@@ -101,11 +101,12 @@ h3{
     
 }
 .CovidEstadistica{
+    display: inline-block;
     text-align: center;
     width: 75%;
     margin: 35px;
     border: 2px solid red;
-    display: inline-block;
+    
 }
 
 
@@ -139,7 +140,7 @@ h3{
     display: flex;
 }
 .grupoTrabajo__div{
-    width: 25%;
+    width: 33%;
     height: 300px;
     margin: 1%;
     padding: 8px;
@@ -175,13 +176,8 @@ h3{
 }
 
 /* INDICE HOME*/
-.Indice p {
-    text-align: center;
-    
-}
-.Indice h3{
-    text-align: center;
-}
+
+
 .Indice li{
     margin: 10%;
     text-align: center;
@@ -268,10 +264,11 @@ footer li{
     margin: 1%;
     border: 2px solid slateblue;
     border-radius: 5%;
-    transition: transform 1s;
+    
 }
 .Noticias a:hover{
     transform: scale(1.05);
+    transition: transform 1s;
     border: 2px solid slategray
 }
 
@@ -325,8 +322,6 @@ footer li{
     border-radius: 50px;
     word-wrap: break-word;
     margin: 1%;
-
-
 }
 .MensajeNoEnviado{
     background-color: indianred;
@@ -334,8 +329,6 @@ footer li{
     border-radius: 50px;
     word-wrap: break-word;
     margin: 1%;
-
-
 }
 .textoPreview{
     
