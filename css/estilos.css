@@ -267,8 +267,8 @@ footer li{
     
 }
 .Noticias a:hover{
-    transform: scale(1.05);
     transition: transform 1s;
+    transform: scale(1.05);
     border: 2px solid slategray
 }
 
@@ -348,7 +348,7 @@ footer li{
     padding-right: 10%;
 }
 
-.capcha{
+.captcha{
     text-align: center;
     margin-bottom: 2%;
     

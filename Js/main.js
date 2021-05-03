@@ -21,7 +21,7 @@ inputTexto.addEventListener("keyup",preview);
 inputEstado.addEventListener("keyup",preview);
 inputNombre.addEventListener("keyup", preview);
 inputApellido.addEventListener("keyup",preview);
-inputEnviar.addEventListener("click",validarCapcha);
+inputEnviar.addEventListener("click",validarCaptcha);
 
 cambiarNumeros();
 
@@ -66,7 +66,7 @@ function preview(){
 
 }
 
-function validarCapcha(){
+function validarCaptcha(){
     if (inputResultadoCapcha.value==(numRandom1+numRandom2)){
         send();
         
