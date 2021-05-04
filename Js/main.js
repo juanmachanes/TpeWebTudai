@@ -12,7 +12,7 @@ let inputNombre = document.getElementById("inputNombre");
 let inputApellido = document.getElementById("inputApellido");
 let inputEnviar = document.getElementById("enviar");
 
-let envios = document.querySelector(".Envios");
+let envios = document.querySelector(".envios");
 let Preview = document.querySelector(".textoPreview");
 let estadoPreview = document.querySelector(".textoEstadoPreview");
 let Firma = document.querySelector(".firmaPreview")
@@ -42,7 +42,7 @@ function send(){
     asunto.className="textoEstadoPreview";
     texto.className="textoPreview";
     nombre.className="firmaPreview";
-    post.className="MensajeEnviado";
+    post.className="mensajeEnviado";
     post.appendChild(asunto);
     post.appendChild(texto);
     post.appendChild(nombre);
@@ -52,9 +52,9 @@ function send(){
 function sendError(){
     let post = document.createElement("div");
     let texto = document.createElement("p");
-    texto.innerHTML= "No se pudo mandar el mensaje,error en la resolucion del capcha";
+    texto.innerHTML= "No se pudo mandar el mensaje,error en la resolucion del captcha";
     texto.className="textoPreview";
-    post.className="MensajeNoEnviado";
+    post.className="mensajeNoEnviado";
     post.appendChild(texto);
     envios.appendChild(post);
 }
