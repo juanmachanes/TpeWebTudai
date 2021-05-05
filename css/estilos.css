@@ -185,18 +185,16 @@ h3{
 
 /* FOOTER*/
 footer{
-    width: 100%;
-    padding-top: 25px;
+
     background-color: slateblue;
     padding: 5px;
 }
-footer ul{
+
+footer p{
     text-align: center;
+    color: white;
 }
-footer li{
-    display: inline-block;
-    text-align: center;    
-}
+
 .radio{
     text-align: center;
 
