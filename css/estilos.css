@@ -203,45 +203,45 @@ footer p{
 
 /* NOTICIAS*/
 #Noticia1{
-    background-image: url(../img/e983f63e-fiesta-clandestina-amércio-reynoso.webp);
+    background-image: url(../img/noticia1.jpg);
     background-size: cover;
     
 }
 #Noticia2{
-    background-image: url(https://cdn.eleco.com.ar/media/2021/04/0435de14-muerto.jpg);
+    background-image: url(../img/noticia2.jpg);
     background-size: cover;
 }
 #Noticia3{
-    background-image: url(https://cdn.eleco.com.ar/media/2021/04/37650059-drogas-1.jpeg);
+    background-image: url(../img/noticia3.jpg);
     background-size: cover;
 }
 #Noticia4{
-    background-image: url(https://cdn.eleco.com.ar/media/2021/04/7936df13-patagonia.jpg);
+    background-image: url(../img/noticia4.jpg);
     background-size: cover;
     
 }
 #Noticia5{
-    background-image: url(https://cdn.eleco.com.ar/media/2021/04/bcd612bc-santa.jpg);
+    background-image: url(../img/noticia5.jpg);
     background-size: cover;
     
 }
 #Noticia6{
-    background-image: url(https://cdn.eleco.com.ar/media/2021/04/e9c5c2b1-golf.jpeg);
+    background-image: url(../img/noticia6.jpg);
     background-size: cover;
     
 }
 #Noticia7{
-    background-image: url(https://cdn.eleco.com.ar/media/2021/04/d1dd861b-parte-diario-28-04-1.jpg);
+    background-image: url(../img/noticia7.jpg);
     background-size: cover;
     
 }
 #Noticia8{
-    background-image: url(https://cdn.eleco.com.ar/media/2020/08/Hospital-Santamarina-25-08-20-10.jpg);
+    background-image: url(../img/noticia8.jpg);
     background-size: cover;
     
 }
 #Noticia9{
-    background-image: url(https://www.eleco.com.ar/wp-content/uploads/2019/01/Hospital-neonatologia-18-01-7.jpg);
+    background-image: url(../img/noticia9.jpg);
     background-size: cover;
     
 }
