@@ -94,8 +94,7 @@ h3{
     display: flex;
 }
 .divTiempo__li{
-    list-style: none;
-    
+    list-style: none;   
 }
 .covidEstadistica{
     display: inline-block;
@@ -103,7 +102,6 @@ h3{
     width: 75%;
     margin: 35px;
     border: 2px solid red;
-    
 }
 
 
@@ -201,6 +199,8 @@ footer li{
 }
 .radio{
     text-align: center;
+
+
 }
 
 /* NOTICIAS*/
