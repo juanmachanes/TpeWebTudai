@@ -195,10 +195,16 @@ footer p{
     color: white;
 }
 
+/* RADIO(AUDIO)*/
 .radio{
     text-align: center;
 
+}
 
+.radio iframe{
+    width: 350px;
+    height: 495px; 
+    border: 0px;
 }
 
 /* NOTICIAS*/
