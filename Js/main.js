@@ -17,7 +17,8 @@ let inputEnviar = document.getElementById("enviar");
 let envios = document.querySelector(".envios");
 let Preview = document.querySelector(".textoPreview");
 let estadoPreview = document.querySelector(".textoEstadoPreview");
-let Firma = document.querySelector(".firmaPreview")
+let Firma = document.querySelector(".firmaPreview");
+
 //SE LE ASIGNA EVENTOS A LOS INPUT
 inputTexto.addEventListener("keyup",preview);
 inputEstado.addEventListener("keyup",preview);
