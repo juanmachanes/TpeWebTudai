@@ -77,17 +77,16 @@ h3{
     padding-top: 5%;
     width: 50%;
     margin: 0 auto;
-
+    align-items: center;
 }
 .titulo{
+    width: 25%;
+}
+.titulo h1{
+    padding: 30px;
     text-align: center;
     border: 5px dotted blueviolet;
     border-radius: 250px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 25%;
-    padding: 2%;
 }
 
 .divTiempo{
