@@ -1,7 +1,7 @@
 "use strict";
 //NUMEROS RANDOM
-let numRandom1;
-let numRandom2;
+let numRandom1= Math.floor((Math.random()*10) + 1);
+let numRandom2=Math.floor((Math.random()*10) + 1);
 
 //ELEMENTOS HTML
 let num1= document.getElementById("num1");
@@ -27,12 +27,10 @@ inputApellido.addEventListener("keyup",preview);
 inputEnviar.addEventListener("click",validarCaptcha);
 
 //INICIALIZACION DE NUMEROS
-cambiarNumeros(numRandom1,numRandom2);
+cambiarNumeros();
 
 //SE LE DA VALOS A #NUM1 Y #NUM2 
-function cambiarNumeros(numRandom1,numRandom2){
-    numRandom1= Math.floor((Math.random()*10) + 1);
-    numRandom2 = Math.floor((Math.random()*10) + 1);
+function cambiarNumeros(){
     num1.innerHTML=numRandom1;
     num2.innerHTML=numRandom2;
 }
@@ -77,8 +75,11 @@ function validarCaptcha(){
         envio();
         
     }else{
+        
         envioError();
 
     }
+    numRandom1 = Math.floor((Math.random()*10) + 1);
+    numRandom2 = Math.floor((Math.random()*10) + 1);
     cambiarNumeros();
 }
