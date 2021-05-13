@@ -167,19 +167,27 @@ h3{
 
 /* GRUPO DE TRABAJO*/
 .grupoTrabajo{
-    justify-content: center;
+    width: 100%;
+    align-items: center;
     display: flex;
+    flex-direction: column ;
+}
+@media only screen and (min-width: 1000px){
+
+    .grupoTrabajo{
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }
 .grupoTrabajo__div{
-    width: 33%;
+    width: 80%;
     height: 300px;
     margin: 1%;
     padding: 8px;
     border: 2px solid slateblue;
     border-radius: 10%;
     background-color: darkseagreen;
-    
-    
 }
 .grupoTrabajo__div:hover{
     transform: scale(1.1);
@@ -228,9 +236,11 @@ h3{
 }
 
 .radio iframe{
-    width: 350px;
-    height: 495px; 
-    border: 0px;
+    width: 300px;
+    height: 500px; 
+    border: 1px;
+    border-radius: 5%;
+    
 }
 /* FOOTER*/
 footer{
