@@ -12,6 +12,7 @@ a{
     text-decoration: none;
 }
 body{
+    justify-content: center;
     margin: 0%;
     animation-name:animacionAgrandar;
     animation-duration: 1s;
@@ -73,27 +74,38 @@ h3{
 /* HEAD*/
 .head{
     display: flex;
+    flex-direction: column;
     padding-top: 5%;
-    width: 50%;
     margin: 0 auto;
     align-items: center;
 }
 .titulo{
-    width: 25%;
+    min-width: 100px;
 }
 .titulo h1{
     padding: 30px;
     text-align: center;
     border: 5px dotted blueviolet;
+    word-wrap: break-word;
     border-radius: 250px;
 }
 
 .divTiempo{
-    width: 75%;
+    
     display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
 }
 .divTiempo__li{
     list-style: none;   
+}
+@media only screen and (min-width: 1000px){
+
+    .divTiempo{
+        flex-direction: row;
+    }
+
 }
 .covidEstadistica{
     text-align: center;
@@ -106,20 +118,46 @@ h3{
 /* CUERPO HOME*/
 .contenido{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+@media only screen and (min-width: 1000px){
+
+    .contenido{
+        
+        flex-direction: row;
+        
+        
+    }
+    .contenidoDerecho{
+        
+        width: 30%;
+        
+    }
+    .contenidoIzquierdo{
+       
+        width: 80%;
+    
+    }
+
 }
 
 
 .contenidoDerecho{
+    
+    
     padding: 1%;
-    width: 20%;
     background-color: darkseagreen;
     border: 2px solid black;
     border-radius: 50px;
     margin: 2%;
 }
 .contenidoIzquierdo{
+    
     padding: 1%;
-    width: 80%;
     background-color: indianred;
     border: 2px solid black;
     border-radius: 50px;
@@ -152,6 +190,7 @@ h3{
     width: 100%;
     height: 220px;
     border-radius: 10%;
+    position: cover;
 }
 .grupoTrabajo__div p{
     text-align: center;
