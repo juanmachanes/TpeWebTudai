@@ -11,18 +11,25 @@
 </head>
 <body>
     <!--BARRA DE NAVEGACION -->
-    <div class="nav">
-        <ul class="nav__ul">
-            <li class="nav__li"><a  href="index.html">Radio La Zona</a></li>
-            <li class="nav__li"><a href="NoticiasTandil.html">Noticias Tandil</a></li>
-            <li class="nav__li"><a href="#">Noticias Olavarria</a></li>
-            <li class="nav__li"><a href="#">Noticias Gardey</a></li>
-            <li class="nav__li"><a href="Contactanos.html">Contactanos</a></li>
-        </ul>
-    </div>
+    <nav>
+        <div class="logo">
+           <h1>La Zona</h1>
+          <div class="btn_menu"><a>MENÚ</a></div>
+        </div>
+      
+        <div class="menu">
+          <ul class="navigation">
+            <li><a  href="index.html">Radio La Zona</a></li>
+            <li><a href="NoticiasTandil.html">Noticias Tandil</a></li>
+            <li><a href="#">Noticias Olavarria</a></li>
+            <li><a href="#">Noticias Gardey</a></li>
+            <li><a href="Contactanos.html">Contactanos</a></li>
+           </ul>
+        </div>  
+    </nav>
 
 
-    <div class="head">
+    <header class="head">
         <div class="titulo">
             <h1>Radio La Zona</h1>
         </div>
@@ -32,7 +39,7 @@
             <li class="divTiempo__li"><div id="cont_2b969f8484e8d9f49193afa636b0c91e"><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/2b969f8484e8d9f49193afa636b0c91e"></script></div></li>
             <li class="divTiempo__li"><div id="cont_51513ff362eb925efbd267e943fafc6c"><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/51513ff362eb925efbd267e943fafc6c"></script></div></li>
         </ul>
-    </div> 
+    </header> 
     <!--CONTENIDO COMPLETO -->
     <div class="contenido">
 
@@ -70,123 +77,50 @@
             <div class="horario" id="Horarios">
                 <h2>Horarios</h2>  
                 <table class="tabla">
-
-                    <tr>
-                
-                    <th>/</th>
-                
-                    <th>Lunes</th>
-                
-                    <th>Martes</th>
-                
-                    <th>Miercoles</th>
-
-                    <th>Jueves</th>
-
-                    <th>Sabado</th>
-
-                    <th>Domingo</th>
-                
-                    </tr>
-                
-                    <tr>
-                
-                    <th>8:00 a 10:00</th>
-                
-                    <td>Juan Manuel Chanes</td>
-                
-                    <td>Dario Gomez</td>
-                
-                    <td>Franco Fernandez</td>
-
-                    <td>Estaban Hernandez</td>
-
-                    <td>Guido Lopez</td>
-
-                    <td>Estaban Hernandez</td>
-
-                
-                    </tr>
-                
-                    <tr>
-                
-                        <th>10:00 a 12:00</th>
-
-                        <td>Dario Gomez</td>
-                    
-                        <td>Guido Lopez</td>
-                    
-                        <td>Franco Fernandez</td>
-
-                        <td>Juan Manuel Chanes</td>
-    
-                        <td>Estaban Hernandez</td>
-    
+                    <thead>
                         
-    
-                        <td>Estaban Hernandez</td>
-                
-                    </tr>
-                
-                    <tr>
-                
-                        <th>12:00 a 14:00</th>
-
-                        <td>Franco Fernandez</td>
-                
-                        <td>Juan Manuel Chanes</td>
                     
-                        <td>Estaban Hernandez</td>
-    
-                        <td>Guido Lopez</td>
-    
-                        <td>Estaban Hernandez</td>
-
-                        <td>Dario Gomez</td>
-                
-                    </tr>
-                    <tr>
-                
-                        <th>14:00 a 16:00</th>
-                
-                        <td>Franco Fernandez</td>
+                        <tr>
                     
-                        <td>Dario Gomez</td>
+                            <th>Dia</th>
+                        
+                            <th>8:00 a 10:00</th>
+                            
+                            <th>10:00 a 12:00</th>
 
-                        <td>Juan Manuel Chanes</td>
+                            <th>12:00 a 14:00</th>
+                        
+                            <th>14:00 a 16:00</th>
+
+                            <th>16:00 a 18:00</th>
+
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                    </thead>
+                    <tbody class="bodyTable">
+
+                    </tbody>
+                
                     
-                        <td>Estaban Hernandez</td>
-    
-                        <td>Guido Lopez</td>
-    
-                        <td>Estaban Hernandez</td>
-                
-                    </tr>
-                    <tr>
-                
-                        <th>16:00 a 18:00</th>
-                
-                        <td>Juan Manuel Chanes</td>
-                    
-                        <td>Estaban Hernandez</td>
 
-                        <td>Dario Gomez</td>
-    
-                        <td>Estaban Hernandez</td>
-
-                        <td>Guido Lopez</td>
-
-                        <td>Franco Fernandez</td>
-                
-                    </tr>
-                
                 </table>
             </div>
+            <form class="formulario">
+                Dia:<input type="text" id="dia">
+                8:00 a 10:00:<input type="text" id="horario8A10">
+                10:00 a 12:00:<input type="text" id="horario10A12">
+                12:00 a 14:00:<input type="text" id="horario12A14">
+                14:00 a 16:00: <input type="text"id="horario14A16">
+                16:00 a 18:00:<input type="text"id="horario16A18">
+            </form>
+            <button id="inputEnviar">Enviar</button>
+            <button id="inputEnviarX3">EnviarX3</button>
             <!--SECCION:ESCUCHANOS -->
             <div id="escuchanos">
 
                 <h2>Escuchanos</h2>
-
                 <div class="radio">
                     <iframe scrolling="NO"  src="https://www.solumedia.com.ar/radios/8082/index.html"></iframe>
                 </div>
@@ -224,6 +158,7 @@
     <footer>
         <P>Radio La Zona</P>
     </footer> 
-    
+    <script src="Js/index.js"></script>
+    <script src="Js/tabla.js"></script>
 </body>
 </html>
