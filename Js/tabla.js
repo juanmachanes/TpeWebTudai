@@ -26,17 +26,20 @@ function insertar(){
 }
 
 function mostrar(){
+    insertar();
+    bodyTable.innerHTML=" "
     for (const item of arregloTAbla) {
         bodyTable.innerHTML+="<tr><th>"+item.dia+"</th><td>"+item.primerTurno+"</td><td>"+item.segundoTurno+"</td><td>"+item.tercerTurno+"</td><td>"+item.cuartoTurno+"</td><td>"+item.quintoTurno+"</td></tr>"
     }
 }
 
+
 function insertarX3(){
     for (var i =0;i<3;i++){
-        insertar();
+        mostrar();
     }
 }
 
-enviar.addEventListener("click",insertar);
+enviar.addEventListener("click",mostrar);
 enviarX3.addEventListener("click",insertarX3);
 
