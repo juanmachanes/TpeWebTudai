@@ -434,11 +434,47 @@ footer p{
 }
 
 
-/* TABLA HORARIOS*/
-.tabla{
-    width: 100%;
+
+table {
+   width: 100%;  
+}
+table thead{
+    display: none;
+}
+table td{
+    display: block;
     text-align: center;
 }
+.regional{
+    background-color: blue;
+    
+}
+.deportes{
+    background-color: green;
+}
+.farandula{
+    background-color: greenyellow;
+}
+.musica{
+    background-color: hotpink;
+}
+
+@media only screen and (min-width: 1000px){
+table thead{
+    display: table-header-group;
+}
+
+table td{
+    display: table-cell;
+}
+
+
+}
+
+
+
+
+
 
 
 /* CONTACTANOS ENVIO*/
@@ -446,6 +482,7 @@ footer p{
 .contenidoContactanos{
     
     padding-top: 2%;
+    word-wrap: break-word;
 }
 .preview{
     

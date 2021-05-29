@@ -1,45 +1,107 @@
 "use strict";
-let horario8A10= document.getElementById("horario8A10");
-let horario10A12= document.getElementById("horario10A12");
-let horario12A14= document.getElementById("horario12A14");
-let horario14A16= document.getElementById("horario14A16");
-let horario16A18= document.getElementById("horario16A18");
-let diaInput = document.getElementById("dia");
+
 let bodyTable = document.querySelector(".bodyTable");
 let enviar = document.getElementById("inputEnviar");
 let enviarX3 = document.getElementById("inputEnviarX3");
-let arregloTAbla=[];
+let borrar = document.getElementById("borrar");
+let formulario = document.querySelector(".formulario");
+var nodeList = formulario.childNodes;
+
+let arregloTAbla=[
+    {
+        dia : "Domingo",
+        primerTurno:"-",
+        segundoTurno:"-",
+        tercerTurno:"-",
+        cuartoTurno:"-",
+        quintoTurno:"-",
+        
+
+    }
+
+];
+
+mostrar();
+function mostrar(){
+    
+    bodyTable.innerHTML=" ";
+    var elementos = new Array();
+    var Turnos = new Array();
+    let tr;
+    let th;
+    for (const item of arregloTAbla) {
+
+        tr = document.createElement("TR");
+        th = document.createElement("TH");
+        th.innerHTML = item.dia;
+        Turnos[0]=item.primerTurno;
+        Turnos[1]=item.segundoTurno;
+        Turnos[2]=item.tercerTurno;
+        Turnos[3]=item.cuartoTurno;
+        Turnos[4]=item.quintoTurno;
+
+        for(var i=0;i<5;i++)
+        {
+            elementos[i] = document.createElement("TD");
+            elementos[i].innerHTML=Turnos[i];
+            if (Turnos[i] =="Dario Gomez")
+            {
+                elementos[i].className="regional";
+            }else
+                if(Turnos[i] =="Rosio Serra")
+                {
+                    elementos[i].className="farandula";
+                }else
+                    if(Turnos[i] =="Carlos Sommi")
+                    {
+                        elementos[i].className="deportes"
+    
+                    }else
+                        if(Turnos[i] =="Tomas Tompshon"){
+                            elementos[i].className="musica"
+                        }
+        }        
+        tr.appendChild(th);
+        tr.appendChild(elementos[0]);
+        tr.appendChild(elementos[1]);
+        tr.appendChild(elementos[2]);
+        tr.appendChild(elementos[3]);
+        tr.appendChild(elementos[4]);
+        bodyTable.appendChild(tr);
+    }
+}
+
+function vaciar(){
+    while(arregloTAbla.length > 0)
+        arregloTAbla.pop();
+ mostrar();
+}
 
 function insertar(){
+
     let horarioDiario =
     {
-        dia : diaInput.value,
-        primerTurno:horario8A10.value,
-        segundoTurno:horario10A12.value,
-        tercerTurno:horario12A14.value,
-        cuartoTurno:horario14A16.value,
-        quintoTurno:horario16A18.value,
-        
+        dia : nodeList[1].options[nodeList[1].selectedIndex].value,
+        primerTurno:nodeList[3].options[nodeList[3].selectedIndex].value,
+        segundoTurno:nodeList[5].options[nodeList[5].selectedIndex].value,
+        tercerTurno:nodeList[7].options[nodeList[7].selectedIndex].value,
+        cuartoTurno:nodeList[9].options[nodeList[9].selectedIndex].value,
+        quintoTurno:nodeList[11].options[nodeList[11].selectedIndex].value,
     }
     arregloTAbla.push(horarioDiario);
+    mostrar();
+    
     
 }
 
-function mostrar(){
-    insertar();
-    bodyTable.innerHTML=" "
-    for (const item of arregloTAbla) {
-        bodyTable.innerHTML+="<tr><th>"+item.dia+"</th><td>"+item.primerTurno+"</td><td>"+item.segundoTurno+"</td><td>"+item.tercerTurno+"</td><td>"+item.cuartoTurno+"</td><td>"+item.quintoTurno+"</td></tr>"
-    }
-}
-
-
 function insertarX3(){
     for (var i =0;i<3;i++){
-        mostrar();
+        insertar();
     }
+    
+    mostrar();
 }
-
-enviar.addEventListener("click",mostrar);
+borrar.addEventListener("click",vaciar);
+enviar.addEventListener("click",insertar);
 enviarX3.addEventListener("click",insertarX3);
 
