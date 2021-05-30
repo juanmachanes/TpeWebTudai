@@ -34,6 +34,7 @@ function mostrar(){
         tr = document.createElement("TR");
         th = document.createElement("TH");
         th.innerHTML = item.dia;
+        tr.appendChild(th);
         Turnos[0]=item.primerTurno;
         Turnos[1]=item.segundoTurno;
         Turnos[2]=item.tercerTurno;
@@ -60,13 +61,8 @@ function mostrar(){
                         if(Turnos[i] =="Tomas Tompshon"){
                             elementos[i].className="musica"
                         }
+        tr.appendChild(elementos[i]);
         }        
-        tr.appendChild(th);
-        tr.appendChild(elementos[0]);
-        tr.appendChild(elementos[1]);
-        tr.appendChild(elementos[2]);
-        tr.appendChild(elementos[3]);
-        tr.appendChild(elementos[4]);
         bodyTable.appendChild(tr);
     }
 }
@@ -90,8 +86,6 @@ function insertar(){
     }
     arregloTAbla.push(horarioDiario);
     mostrar();
-    
-    
 }
 
 function insertarX3(){

@@ -397,7 +397,7 @@ footer p{
     color: white; 
 }
 
-.noticias a {
+.noticias article {
     width: 90%;
     height: 600px;
     margin: 3%;
@@ -405,7 +405,7 @@ footer p{
     border-radius: 5%;
     
 }
-.noticias a:hover{
+.noticias article:hover{
     transition: transform 1s;
     transform: scale(1.05);
     border: 2px solid slategray
@@ -415,7 +415,7 @@ footer p{
     .noticias{
         flex-direction: row;
     }
-    .noticias a {
+    .noticias article {
         width: 33%;
         margin: 1%;
         height: 400px;
