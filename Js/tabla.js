@@ -16,7 +16,6 @@ let arregloTAbla=[
         cuartoTurno:"-",
         quintoTurno:"-",
         
-
     }
 
 ];

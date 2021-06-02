@@ -51,6 +51,8 @@ h3{
     color: white;
 }
 
+/*BARRA DE NAVEGACION*/
+
 .btn_menu {
     color: white;
     padding: 15px;
@@ -76,7 +78,6 @@ ul.navigation {
     flex-direction: column;
 }
 
-/* si tiene tambien la clase show */
 ul.navigation.show {
      display: flex;
  }
@@ -96,7 +97,7 @@ ul.navigation li:hover {
     background-color: rgb(83, 81, 81);
 }
 
-
+/*BARRA DE NAVEGACION PARA ESCRITORIO*/
 @media screen and (min-width: 800px){
 
     /* en desktop ocultamos siempre el boton del menu */
@@ -154,6 +155,7 @@ header{
     margin: 35px;
     border: 2px solid red;
 }
+/*HEADER PARA ESCRITORIO*/
 @media only screen and (min-width: 1000px){
 
     .divTiempo{
@@ -189,7 +191,7 @@ aside{
     margin: 2%;
 
 }
-
+/*CUERPO PARA ESCRITORIO */
 @media only screen and (min-width: 1000px){
 
     .contenido{
@@ -247,7 +249,7 @@ aside{
 .grupoTrabajo__div p{
     text-align: center;
 }
-
+/*GRUPO DE TRABAJO PARA ESCRITORIO*/
 @media only screen and (min-width: 1000px){
 
     .grupoTrabajo{
@@ -383,6 +385,7 @@ footer p{
     transform: scale(1.05);
     border: 2px solid slategray
 }
+/*NOTICIAS PARA ESCRITORIO*/
 @media only screen and (min-width: 1000px){
 
     .noticias{
@@ -407,7 +410,7 @@ footer p{
 }
 
 
-
+/*TABLA*/
 table {
    width: 100%;  
 }
@@ -424,7 +427,7 @@ select, input{
     width: 100%;
 }
 
-
+/*FORMULARIO PARA ESCRITORIO*/
 @media only screen and (min-width: 1000px){
     .formulario{
         display: flex;
@@ -458,6 +461,7 @@ select, input{
     background-color: hotpink;
 }
 
+/*TABLA PARA ESCRITORIO*/
 @media only screen and (min-width: 1000px){
     table thead{
         display: table-header-group;
