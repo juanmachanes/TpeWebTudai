@@ -115,40 +115,9 @@ ul.navigation li:hover {
 
 
 }
-/* BARRA DE NAVEGACION*/
-/*
-.nav{
-    background-color: blueviolet;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-.nav__ul{
-    justify-content: center;
-    display: flex;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    
-}
-.nav__li{
-    list-style: none;
-    margin: 1px 0%;
-    padding: 12px;
-    margin: 5px 5%;
-}
 
-.nav__li a{
-    color: white;
-}
-
-
-.nav__li:hover{
-    padding: 10px;
-    border: 2px solid white ;
-}
-*/
 /* HEAD*/
-.head{
+header{
     display: flex;
     flex-direction: column;
     
@@ -199,30 +168,7 @@ ul.navigation li:hover {
 
     
 }
-
-@media only screen and (min-width: 1000px){
-
-    .contenido{
-        
-        flex-direction: row;
-        
-        
-    }
-    .contenidoDerecho{
-        
-        width: 30%;
-        
-    }
-    .contenidoIzquierdo{
-       
-        width: 80%;
-    
-    }
-
-}
-
-
-.contenidoDerecho{
+aside{
     
     
     padding: 1%;
@@ -240,6 +186,30 @@ ul.navigation li:hover {
     margin: 2%;
 
 }
+
+@media only screen and (min-width: 1000px){
+
+    .contenido{
+        
+        flex-direction: row;
+        
+        
+    }
+    aside{
+        
+        width: 30%;
+        
+    }
+    .contenidoIzquierdo{
+       
+        width: 80%;
+    
+    }
+
+}
+
+
+
 
 /* GRUPO DE TRABAJO*/
 .grupoTrabajo{
@@ -460,13 +430,13 @@ table td{
 }
 
 @media only screen and (min-width: 1000px){
-table thead{
-    display: table-header-group;
-}
+    table thead{
+        display: table-header-group;
+    }
 
-table td{
-    display: table-cell;
-}
+    table td{
+        display: table-cell;
+    }
 
 
 }
@@ -542,10 +512,11 @@ table td{
     margin-bottom: 2%;
     
 }
-.formulario{
+form{
     text-align: center;
+    
 }
-.formulario input{
+form input{
     margin-right: 5%;
 }
 .envioMensaje{

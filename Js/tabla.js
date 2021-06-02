@@ -25,7 +25,7 @@ mostrar();
 function mostrar(){
     
     bodyTable.innerHTML=" ";
-    var elementos = new Array();
+    let elemento;
     var Turnos = new Array();
     let tr;
     let th;
@@ -43,25 +43,25 @@ function mostrar(){
 
         for(var i=0;i<5;i++)
         {
-            elementos[i] = document.createElement("TD");
-            elementos[i].innerHTML=Turnos[i];
+            elemento=document.createElement("TD");
+            elemento.innerHTML=Turnos[i];
             if (Turnos[i] =="Dario Gomez")
             {
-                elementos[i].className="regional";
+                elemento.className="regional";
             }else
                 if(Turnos[i] =="Rosio Serra")
                 {
-                    elementos[i].className="farandula";
+                    elemento.className="farandula";
                 }else
                     if(Turnos[i] =="Carlos Sommi")
                     {
-                        elementos[i].className="deportes"
+                        elemento.className="deportes"
     
                     }else
                         if(Turnos[i] =="Tomas Tompshon"){
-                            elementos[i].className="musica"
+                            elemento.className="musica"
                         }
-        tr.appendChild(elementos[i]);
+        tr.appendChild(elemento);
         }        
         bodyTable.appendChild(tr);
     }

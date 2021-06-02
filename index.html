@@ -29,7 +29,7 @@
     </nav>
 
 
-    <header class="head">
+    <header >
         <div class="titulo">
             <h1>Radio La Zona</h1>
         </div>
@@ -41,19 +41,19 @@
         </ul>
     </header> 
     <!--CONTENIDO COMPLETO -->
-    <section class="contenido">
+    <div class="contenido">
 
         <!--CONTENIDO IZQUIERDO -->
-        <article class="contenidoIzquierdo">
+        <section class="contenidoIzquierdo">
 
             <!--SECCION:SOBRE NOSOTROS -->
-            <article id="sobreNosotros">
+            <section id="sobreNosotros">
                 <h2>Sobre Nosotros</h2>
                 <p>Lorem ipsum dolor sit ameconsectetur adipisicing elit. Enim explicabo aliquam perferendis porro sed, voluptatem error nesciunt! Amet ipsam ducimus, unde sunt adipisci eligendi delectus molestias! Eaque amet doloremque veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero dolores et mollitia placeat quis ducimus hic, quaerat culpa. Culpa earum blanditiis ullam neque illo. Et omnis explicabo veniam earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cupiditate consequatur ab tempore ullam animi. Expedita optio dolorum unde minima commodi eveniet in, fugit asperiores architecto rem odit, ab impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro eos assumenda praesentium facilis, earum asperiores suscipit rem consequuntur ipsam quas quia, sit accusantium nemo ducimus doloremque, tempore eius reprehenderit?</p>
                 <h3>Grupo Trabajo</h3>
                 
                 <!--*IMAGENES DEL GRUPO DE TRABAJO -->
-                <section class="grupoTrabajo">
+                <div class="grupoTrabajo">
 
                     <div class="grupoTrabajo__div">
                         <p>Dario Gomez</p>
@@ -70,11 +70,11 @@
                         <img class="grupoTrabajo__img" src="img/alejandra.jpg" alt="Imagen de Alejandra">
                     </div>
 
-                </section>
+                </div>
                 
-            </article>
+            </section>
             <!--*TABLA DE HORARIOS -->
-            <article class="horario" id="Horarios">
+            <section class="horario" id="Horarios">
                 <h2>Horarios</h2>  
                 <table class="tabla">
                     <thead>
@@ -181,22 +181,20 @@
                 <button id="inputEnviar">Enviar</button>
                 <button id="borrar">Borrar</button>
                 <button id="inputEnviarX3">EnviarX3</button>
-            </article>
+            </section>
             
             <!--SECCION:ESCUCHANOS -->
-            <article id="escuchanos">
+            <section id="escuchanos">
 
                 <h2>Escuchanos</h2>
                 <div class="radio">
                     <iframe scrolling="NO"  src="https://www.solumedia.com.ar/radios/8082/index.html"></iframe>
                 </div>
 
-            </article>
-
-
-        </article>
+            </section>
+        </section>
         <!--CONTENIDO DERECHO -->
-        <aside class="contenidoDerecho">
+        <aside>
             <!--*LISTA DE SECCIONES -->
             <h3>Indice</h3>
             <ol class="indice">
@@ -205,26 +203,27 @@
                 <li>Horarios</li>
                 <li>Escuchanos</li>
             </ol>
-            <div class="publicidad">
+            <article class="publicidad">
                 <img class="publicidad__img" src="img/publicidad1.gif" alt="Publicidad">
-            </div>
-            <div class="publicidad">
+            </article>
+            <article class="publicidad">
                 <img class="publicidad__img" src="img/publicidad2.gif" alt="Publicidad">
-            </div>
-            <div class="publicidad">
+            </article>
+            <article class="publicidad">
                 <img class="publicidad__img" src="img/publicidad3.gif" alt="Publicidad">
-            </div>
-            <div class="publicidad">
+            </article>
+            <article class="publicidad">
                 <img class="publicidad__img" src="img/publicidad1.gif" alt="Publicidad">
-            </div>   
+            </article>   
         </aside>
         
-    </section> 
+    </div> 
     <!--PIE DE PAGINA -->
     <footer>
         <P>Radio La Zona</P>
     </footer> 
-    <script src="Js/index.js"></script>
     <script src="Js/tabla.js"></script>
+    <script src="Js/index.js"></script>
+    
 </body>
 </html>

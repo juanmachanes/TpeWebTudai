@@ -26,11 +26,6 @@ inputNombre.addEventListener("keyup", preview);
 inputApellido.addEventListener("keyup",preview);
 inputEnviar.addEventListener("click",validarCaptcha);
 
-document.querySelector(".btn_menu").addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-    document.querySelector(".navigation").classList.toggle("show");
-}
 //INICIALIZACION DE NUMEROS
 cambiarNumeros();
 
