@@ -418,11 +418,13 @@ table td{
     display: block;
     text-align: center;
 }
-select{
+select, input{
     text-align: center;
     display: block;
     width: 100%;
 }
+
+
 @media only screen and (min-width: 1000px){
     .formulario{
         display: flex;
@@ -431,6 +433,14 @@ select{
         width: 10%;
         margin: 1%;
         
+    }
+    .captcha{
+        width: 50%;
+        margin: auto;
+    }
+    .captcha input{
+        margin: auto;
+        width: 20%;
     }
 
 }
