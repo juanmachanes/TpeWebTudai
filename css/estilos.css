@@ -7,6 +7,8 @@
 
     }
 }
+
+
 /* ELEMENTOS GENERALES*/
 a{
     text-decoration: none;
@@ -74,10 +76,10 @@ ul.navigation {
     flex-direction: column;
 }
 
-    /* si tiene tambien la clase show */
-    ul.navigation.show {
-        display: flex;
-    }
+/* si tiene tambien la clase show */
+ul.navigation.show {
+     display: flex;
+ }
 
 ul.navigation li {
     list-style: none;
@@ -145,18 +147,19 @@ header{
 .divTiempo__li{
     list-style: none;   
 }
+
+.covidEstadistica{
+    text-align: center;
+    width: 75%;
+    margin: 35px;
+    border: 2px solid red;
+}
 @media only screen and (min-width: 1000px){
 
     .divTiempo{
         flex-direction: row;
     }
 
-}
-.covidEstadistica{
-    text-align: center;
-    width: 75%;
-    margin: 35px;
-    border: 2px solid red;
 }
 
 
@@ -415,6 +418,22 @@ table td{
     display: block;
     text-align: center;
 }
+select{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+@media only screen and (min-width: 1000px){
+    .formulario{
+        display: flex;
+    }
+    select{
+        width: 10%;
+        margin: 1%;
+        
+    }
+
+}
 .regional{
     background-color: blue;
     
@@ -440,10 +459,6 @@ table td{
 
 
 }
-
-
-
-
 
 
 
