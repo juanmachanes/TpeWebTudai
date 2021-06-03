@@ -79,8 +79,8 @@ ul.navigation {
 }
 
 ul.navigation.show {
-     display: flex;
- }
+    display: flex;
+}
 
 ul.navigation li {
     list-style: none;

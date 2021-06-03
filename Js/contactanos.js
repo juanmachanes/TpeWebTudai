@@ -15,9 +15,10 @@ let inputEnviar = document.getElementById("enviar");
 
 //CLASES
 let envios = document.querySelector(".envios");
-let Preview = document.querySelector(".textoPreview");
+let previewPost = document.querySelector(".textoPreview");
 let estadoPreview = document.querySelector(".textoEstadoPreview");
-let Firma = document.querySelector(".firmaPreview");
+let firma = document.querySelector(".firmaPreview");
+let formulario = document.querySelector(".formulario");
 
 //SE LE ASIGNA EVENTOS A LOS INPUT
 inputTexto.addEventListener("keyup",preview);
@@ -64,9 +65,9 @@ function envioError(){
 }
 //MUESTRA PREVIEW
 function preview(){
-    Preview.innerHTML = inputTexto.value;
+    previewPost.innerHTML = inputTexto.value;
     estadoPreview.innerHTML = inputEstado.value;
-    Firma.innerHTML = "Atte: "+inputApellido.value+" "+inputNombre.value;
+    firma.innerHTML = "Atte: "+inputApellido.value+" "+inputNombre.value;
 
 }
 //VALIDACION CAPTCHA. AUNQUE SEA CORRECTO O NO CAMBIA NUMEROS PARA PODER HACER UN REINTENTO O MANDAR OTRO MENSAJE 
@@ -82,4 +83,7 @@ function validarCaptcha(){
     numRandom1 = Math.floor((Math.random()*10) + 1);
     numRandom2 = Math.floor((Math.random()*10) + 1);
     cambiarNumeros();
+    formulario.reset();
+    previewPost.innerHTML=" ";
+
 }

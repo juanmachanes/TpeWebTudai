@@ -25,7 +25,7 @@ function mostrar(){
     
     bodyTable.innerHTML=" ";
     let elemento;
-    var Turnos = new Array();
+    let turnos = new Array();
     let tr;
     let th;
     for (const item of arregloTAbla) {
@@ -34,35 +34,35 @@ function mostrar(){
         th = document.createElement("TH");
         th.innerHTML = item.dia;
         tr.appendChild(th);
-        Turnos[0]=item.primerTurno;
-        Turnos[1]=item.segundoTurno;
-        Turnos[2]=item.tercerTurno;
-        Turnos[3]=item.cuartoTurno;
-        Turnos[4]=item.quintoTurno;
+        turnos[0]=item.primerTurno;
+        turnos[1]=item.segundoTurno;
+        turnos[2]=item.tercerTurno;
+        turnos[3]=item.cuartoTurno;
+        turnos[4]=item.quintoTurno;
 
         for(var i=0;i<5;i++)
         {
             elemento=document.createElement("TD");
-            elemento.innerHTML=Turnos[i];
-            if (Turnos[i] =="Dario Gomez")
+            elemento.innerHTML=turnos[i];
+            if (turnos[i] =="Dario Gomez")
             {
                 elemento.className="regional";
             }else
-                if(Turnos[i] =="Rosio Serra")
+                if(turnos[i] =="Rosio Serra")
                 {
                     elemento.className="farandula";
                 }else
-                    if(Turnos[i] =="Carlos Sommi")
+                    if(turnos[i] =="Carlos Sommi")
                     {
                         elemento.className="deportes"
     
                     }else
-                        if(Turnos[i] =="Tomas Tompshon"){
+                        if(turnos[i] =="Tomas Tompshon"){
                             elemento.className="musica"
                         }
         tr.appendChild(elemento);
         }        
-        bodyTable.appendChild(tr);
+    bodyTable.appendChild(tr);
     }
 }
 
